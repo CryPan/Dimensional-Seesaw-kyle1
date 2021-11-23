@@ -678,7 +678,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Dimen\n   See\n"
+  m_Text: "Dimen\n    See\n"
 --- !u!222 &68738723
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3513,10 +3513,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '     sional
-
-
-    saw'
+  m_Text: "     sional\n\n saw"
 --- !u!222 &328983305
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -24266,6 +24263,8 @@ MonoBehaviour:
   OptionsCanvas: {fileID: 0}
   CreditsCanvas: {fileID: 0}
   QuitConfirmationCanvas: {fileID: 0}
+  LoadingCanvas: {fileID: 0}
+  LoadingSlider: {fileID: 0}
 --- !u!1001 &2134484787
 PrefabInstance:
   m_ObjectHideFlags: 0
