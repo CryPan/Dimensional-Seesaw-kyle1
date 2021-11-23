@@ -309,6 +309,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spider Can
       objectReference: {fileID: 0}
+    - target: {fileID: 26060698639962542, guid: 57cb8c242a9f2504fb36075ba77526c2, type: 3}
+      propertyPath: stepSize
+      value: 1.26
+      objectReference: {fileID: 0}
     - target: {fileID: 26060698639962543, guid: 57cb8c242a9f2504fb36075ba77526c2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
