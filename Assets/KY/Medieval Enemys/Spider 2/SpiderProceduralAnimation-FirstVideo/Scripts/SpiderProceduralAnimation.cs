@@ -9,7 +9,6 @@ public class SpiderProceduralAnimation : MonoBehaviour
     public int smoothness = 1;
     public float stepHeight = 0.1f;
     public bool bodyOrientation = true;
-    public LayerMask ground;
 
     private float raycastRange = 1f;
     private Vector3[] defaultLegPositions;
@@ -17,7 +16,6 @@ public class SpiderProceduralAnimation : MonoBehaviour
     private Vector3 lastBodyUp;
     private bool[] legMoving;
     private int nbLegs;
-    private LayerMask layerMask;
     
     private Vector3 velocity;
     private Vector3 lastVelocity;
@@ -45,8 +43,6 @@ public class SpiderProceduralAnimation : MonoBehaviour
     
     void Start()
     {
-        layerMask = ground;
-
         lastBodyUp = transform.up;
 
         nbLegs = legTargets.Length;

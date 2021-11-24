@@ -18,6 +18,8 @@ public class AIController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+
         if(CanAttack)
         {
             agent.SetDestination(TargetPoint.transform.position);

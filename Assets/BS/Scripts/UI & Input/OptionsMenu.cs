@@ -16,6 +16,7 @@ public class OptionsMenu : MonoBehaviour
 
     private void Start()
     {
+        sensitivitySlider.value = Settings.sensitivity;
         sensitivityText.text = "" + (int)sensitivitySlider.value;
         FullscreenDropdown.onValueChanged.AddListener(delegate { FullscreenDropdownValueChanged(FullscreenDropdown); });
         ResolutionDropdown.onValueChanged.AddListener(delegate { ResolutionDropdownValueChanged(ResolutionDropdown); });
