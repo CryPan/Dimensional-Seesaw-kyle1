@@ -9,6 +9,7 @@ public class PlayerHealth : MonoBehaviour
     Vignette _vignette;
 
     public float HitDuration = 1.25f;
+    public float HealthDrainSpeed = 1f;
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +20,7 @@ public class PlayerHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Health -= Time.deltaTime;
+        Health -= Time.deltaTime * HealthDrainSpeed;
 
         if (Health > 100)
         {
