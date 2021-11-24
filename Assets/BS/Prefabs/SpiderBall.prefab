@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 5690467404593173738}
   - component: {fileID: 8285522013441927171}
   m_Layer: 14
-  m_Name: EnemyBullet
+  m_Name: SpiderBall
   m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -63,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 457df9fd78e0e1846a891ba3404dbec9, type: 2}
+  - {fileID: 2100000, guid: 94f00e061e7ee274bad9117a94d3fc48, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -106,7 +106,7 @@ TrailRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5476702562199462452}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
