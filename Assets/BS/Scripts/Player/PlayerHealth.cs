@@ -7,6 +7,8 @@ public class PlayerHealth : MonoBehaviour
     public float Health = 100;
     public PostProcessVolume _volume;
     Vignette _vignette;
+    public GameObject DeathScreen = null;
+    public GameObject PauseMenu = null;
 
     public float HitDuration = 1.25f;
     public float HealthDrainSpeed = 1f;
@@ -29,7 +31,10 @@ public class PlayerHealth : MonoBehaviour
 
         if (Health <= 0)
         {
-            // Die
+            Settings.isPaused = true;
+            Cursor.lockState = CursorLockMode.None;
+            PauseMenu.SetActive(false);
+            DeathScreen.SetActive(true);
         }
     }
 
