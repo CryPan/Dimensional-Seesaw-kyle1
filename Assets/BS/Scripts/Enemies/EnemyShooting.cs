@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 
 public class EnemyShooting : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class EnemyShooting : MonoBehaviour
     bool canShoot = true;
     float shootingTimer = 0;
 
+    public PlayableDirector FloatingHeadshout;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,9 +29,11 @@ public class EnemyShooting : MonoBehaviour
     {
         if(canShoot && gameObject.GetComponent<AIController>().CanAttack)
         {
+            playheadattack();
             GameObject clone = Instantiate(projectile, ShotStart.transform.position, ShotStart.transform.rotation);
             clone.GetComponent<Rigidbody>().AddForce(ShotStart.transform.forward * ProjectileSpeed);
             canShoot = false;
+          
         }
         else
         {
@@ -42,5 +47,10 @@ public class EnemyShooting : MonoBehaviour
                 canShoot = true;
             }
         }
+    }
+
+    void playheadattack()
+    {
+        FloatingHeadshout.Play();
     }
 }
