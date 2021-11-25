@@ -16,13 +16,19 @@ public class DimensionSwitcher : MonoBehaviour
     float switchingTimer;
     bool canSwitch = false;
 
-    public PostProcessVolume volume;
+    public PostProcessVolume _volume;
+    LensDistortion _lensDistortion;
 
     public PlayableDirector HandMove;
 
     public int switchAmount = 100;
 
     // Update is called once per frame
+
+    private void Start()
+    {
+        _volume.profile.TryGetSettings<LensDistortion>(out _lensDistortion);
+    }
     void Update()
     {
 
@@ -71,7 +77,19 @@ public class DimensionSwitcher : MonoBehaviour
     void PlayHandMove()
     {
         HandMove.Play();
+        StartCoroutine(FlashFX());
         SwitchDim();
         canSwitch = false;
+    }
+
+    IEnumerator FlashFX()
+    {
+        float alpha = -100f;
+        while (alpha < 0)
+        {
+            alpha += 1 / 0.005f * Time.deltaTime;
+            _lensDistortion.intensity.value = alpha;
+            yield return new WaitForEndOfFrame();
+        }
     }
 }

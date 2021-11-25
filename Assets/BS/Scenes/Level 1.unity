@@ -12901,7 +12901,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6131477609716106887, guid: ce572bc908458e6408269493f8f8ccf6, type: 3}
   m_PrefabInstance: {fileID: 6131477610020922457}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 448901697}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
@@ -15664,11 +15664,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 8245563889046211892, guid: 44a40f3ce4b64154ba82ff3e9c1703a6, type: 3}
   m_PrefabInstance: {fileID: 447851337}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &448901697 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6131477609716106885, guid: ce572bc908458e6408269493f8f8ccf6, type: 3}
-  m_PrefabInstance: {fileID: 6131477610020922457}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &453656534
 PrefabInstance:
@@ -77606,9 +77601,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 384639710}
     - target: {fileID: 5130345260890991286, guid: d3c10ab386d546a45b4f34ca2578d697, type: 3}
-      propertyPath: lensDistortion
+      propertyPath: _volume
       value: 
-      objectReference: {fileID: 448901697}
+      objectReference: {fileID: 384639710}
     - target: {fileID: 5130345260890991287, guid: d3c10ab386d546a45b4f34ca2578d697, type: 3}
       propertyPath: HUDAndUI
       value: 
