@@ -18,7 +18,9 @@ public class EnemyHealth : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(FlashObject.GetComponent<MeshRenderer>() == null)
+        FlashObject.SetActive(false);
+
+        if (FlashObject.GetComponent<MeshRenderer>() == null)
         {
             mat = FlashObject.GetComponent<SkinnedMeshRenderer>().materials[0];
         }
@@ -32,6 +34,7 @@ public class EnemyHealth : MonoBehaviour
 
     public void TakeDamage(int amount)
     {
+
         StartCoroutine(FlashFX());
         CurrentHP -= amount;
         HealthPanel.anchorMax = new Vector2(CurrentHP / EnemyHP, 1);
@@ -49,6 +52,10 @@ public class EnemyHealth : MonoBehaviour
             mat.color = new Color(1, 1, 1, alpha);
             //_vignette.intensity.value = alpha;
             yield return new WaitForEndOfFrame();
+        }
+        if (alpha <= 0)
+        {
+            FlashObject.SetActive(true);
         }
     }
 }
