@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Playables;
+using UnityEngine.Rendering.PostProcessing;
 
 public class DimensionSwitcher : MonoBehaviour
 {
@@ -15,6 +16,8 @@ public class DimensionSwitcher : MonoBehaviour
     float switchingTimer;
     bool canSwitch = false;
 
+    public PostProcessVolume volume;
+
     public PlayableDirector HandMove;
 
     public int switchAmount = 100;
@@ -22,7 +25,9 @@ public class DimensionSwitcher : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(playerSwitching > 0.1 && !Settings.isPaused && canSwitch)
+
+
+        if (playerSwitching > 0.1 && !Settings.isPaused && canSwitch)
         {
             PlayHandMove();
         }

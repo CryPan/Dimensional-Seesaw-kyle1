@@ -579,6 +579,7 @@ MonoBehaviour:
   movementScript: {fileID: 0}
   charCont: {fileID: 5130345260890991290}
   TimeBetweenSwitching: 1
+  volume: {fileID: 0}
   HandMove: {fileID: 7130118525818050100}
   switchAmount: 100
 --- !u!114 &5130345260890991288
@@ -1025,6 +1026,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1050896411648996563}
     m_Modifications:
+    - target: {fileID: 287281713926466385, guid: e0f53a7605d162540850f4b5fb57758d, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2479224756046695815, guid: e0f53a7605d162540850f4b5fb57758d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.4319992
