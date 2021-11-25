@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Playables;
 
 public class DimensionSwitcher : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class DimensionSwitcher : MonoBehaviour
     float switchingTimer;
     bool canSwitch = false;
 
+    public PlayableDirector HandMove;
+
     public int switchAmount = 100;
 
     // Update is called once per frame
@@ -21,8 +24,7 @@ public class DimensionSwitcher : MonoBehaviour
     {
         if(playerSwitching > 0.1 && !Settings.isPaused && canSwitch)
         {
-            SwitchDim();
-            canSwitch = false;
+            PlayHandMove();
         }
         else if (!canSwitch)
         {
@@ -59,5 +61,12 @@ public class DimensionSwitcher : MonoBehaviour
             charCont.enabled = true;
             isOld = true;
         }
+    }
+
+    void PlayHandMove()
+    {
+        HandMove.Play();
+        SwitchDim();
+        canSwitch = false;
     }
 }
