@@ -13430,7 +13430,6 @@ GameObject:
   - component: {fileID: 974581976}
   - component: {fileID: 974581975}
   - component: {fileID: 974581974}
-  - component: {fileID: 974581977}
   m_Layer: 5
   m_Name: Canvas (1)
   m_TagString: Untagged
@@ -13520,22 +13519,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!114 &974581977
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 974581972}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de9a8748cbf52e34fa2d2b4c015844c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sensitivitySlider: {fileID: 0}
-  sensitivityText: {fileID: 0}
-  FullscreenDropdown: {fileID: 0}
-  ResolutionDropdown: {fileID: 0}
 --- !u!224 &976322263 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 117456855392589531, guid: 70a7a02b212cbc64693edfd7a227f232, type: 3}
