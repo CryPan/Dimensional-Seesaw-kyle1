@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/BS/Scenes/Main Menu.unity
     guid: 7a29c9f374b52414dbd2715562d96821
   - enabled: 1
-    path: Assets/KY/Scenes/Main Menu/Main Menu Cool.unity
+    path: Assets/KY/Scenes/Main Menu Cool.unity
     guid: 88b507e0df4b08940a884f819529b2b2
   - enabled: 1
     path: Assets/BS/Scenes/Level 1.unity

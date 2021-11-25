@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3896592066835049175}
+  - component: {fileID: 2270363684344397548}
   m_Layer: 0
   m_Name: Bone.010_end
   m_TagString: Untagged
@@ -30,6 +31,25 @@ Transform:
   m_Father: {fileID: 584214818979655570}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &2270363684344397548
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 768052148444697578}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &858672729367921111
 GameObject:
   m_ObjectHideFlags: 0
@@ -418,6 +438,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3102260932840524308}
+  - component: {fileID: 3179039044844486746}
   m_Layer: 0
   m_Name: Bone.011_end
   m_TagString: Untagged
@@ -439,6 +460,25 @@ Transform:
   m_Father: {fileID: 1012126595008075412}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &3179039044844486746
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2167478904557030193}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2302453549734847708
 GameObject:
   m_ObjectHideFlags: 0
@@ -774,6 +814,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1012126595008075412}
+  - component: {fileID: 6280665112572471055}
   m_Layer: 0
   m_Name: Bone.011
   m_TagString: Untagged
@@ -796,6 +837,25 @@ Transform:
   m_Father: {fileID: 8940097924790078451}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &6280665112572471055
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3291734686758233846}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3397754977451956759
 GameObject:
   m_ObjectHideFlags: 0
@@ -6965,6 +7025,54 @@ PlayableDirector:
     value: {fileID: 0}
   - key: {fileID: 8625474190429331327, guid: 9d078c21f30cfce4bbcf37a82ab50d10, type: 2}
     value: {fileID: 0}
+  - key: {fileID: 8427824401191415760, guid: 9d078c21f30cfce4bbcf37a82ab50d10, type: 2}
+    value: {fileID: 8771321785600648373}
+  - key: {fileID: 1346584240102259117, guid: 9d078c21f30cfce4bbcf37a82ab50d10, type: 2}
+    value: {fileID: 2671460433547095746}
+  - key: {fileID: -8166767307606361098, guid: 9d078c21f30cfce4bbcf37a82ab50d10, type: 2}
+    value: {fileID: 7334513622546726060}
+  - key: {fileID: 5354335068659921003, guid: 9d078c21f30cfce4bbcf37a82ab50d10, type: 2}
+    value: {fileID: 4332379660291732136}
+  - key: {fileID: 3387358315402776371, guid: 9d078c21f30cfce4bbcf37a82ab50d10, type: 2}
+    value: {fileID: 283489608199609827}
+  - key: {fileID: 9118155999159363739, guid: 9d078c21f30cfce4bbcf37a82ab50d10, type: 2}
+    value: {fileID: 8350558102758425554}
+  - key: {fileID: -3265119029361562106, guid: 9d078c21f30cfce4bbcf37a82ab50d10, type: 2}
+    value: {fileID: 3970775844510728916}
+  - key: {fileID: 2642838133174108217, guid: 9d078c21f30cfce4bbcf37a82ab50d10, type: 2}
+    value: {fileID: 2281442519618790606}
+  - key: {fileID: -1115521490415997396, guid: 9d078c21f30cfce4bbcf37a82ab50d10, type: 2}
+    value: {fileID: 7304042908882935413}
+  - key: {fileID: 2884536098175768867, guid: 9d078c21f30cfce4bbcf37a82ab50d10, type: 2}
+    value: {fileID: 3262783319106731064}
+  - key: {fileID: -933929660960009938, guid: 9d078c21f30cfce4bbcf37a82ab50d10, type: 2}
+    value: {fileID: 7682851796088585950}
+  - key: {fileID: -9146747916678750026, guid: 9d078c21f30cfce4bbcf37a82ab50d10, type: 2}
+    value: {fileID: 8590357358793280521}
+  - key: {fileID: -2263362608903707014, guid: 9d078c21f30cfce4bbcf37a82ab50d10, type: 2}
+    value: {fileID: 2948214165218300969}
+  - key: {fileID: -7811919642793156775, guid: 9d078c21f30cfce4bbcf37a82ab50d10, type: 2}
+    value: {fileID: 5008353150735828631}
+  - key: {fileID: -95286798322916579, guid: 9d078c21f30cfce4bbcf37a82ab50d10, type: 2}
+    value: {fileID: 229940612537742026}
+  - key: {fileID: 9212447715397870822, guid: 9d078c21f30cfce4bbcf37a82ab50d10, type: 2}
+    value: {fileID: 5663091217687113332}
+  - key: {fileID: -6654338300559381536, guid: 9d078c21f30cfce4bbcf37a82ab50d10, type: 2}
+    value: {fileID: 7083611021475233765}
+  - key: {fileID: 6776738283585695361, guid: 9d078c21f30cfce4bbcf37a82ab50d10, type: 2}
+    value: {fileID: 6243377773873893328}
+  - key: {fileID: -4092921089627072495, guid: 9d078c21f30cfce4bbcf37a82ab50d10, type: 2}
+    value: {fileID: 3700595863216745781}
+  - key: {fileID: -4490588374332970398, guid: 9d078c21f30cfce4bbcf37a82ab50d10, type: 2}
+    value: {fileID: 8773473834195517930}
+  - key: {fileID: 3625185036630847025, guid: 9d078c21f30cfce4bbcf37a82ab50d10, type: 2}
+    value: {fileID: 6247903052684542634}
+  - key: {fileID: 3325133557488298412, guid: 9d078c21f30cfce4bbcf37a82ab50d10, type: 2}
+    value: {fileID: 2270363684344397548}
+  - key: {fileID: -8884015199005936918, guid: 9d078c21f30cfce4bbcf37a82ab50d10, type: 2}
+    value: {fileID: 6280665112572471055}
+  - key: {fileID: 5989562347841883424, guid: 9d078c21f30cfce4bbcf37a82ab50d10, type: 2}
+    value: {fileID: 3179039044844486746}
   m_ExposedReferences:
     m_References: []
 --- !u!1 &6412650925997207843
