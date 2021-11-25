@@ -51,6 +51,9 @@ public class EnemyShooting : MonoBehaviour
 
     void playheadattack()
     {
-        FloatingHeadshout.Play();
+        if(FloatingHeadshout != null)
+        {
+            FloatingHeadshout.Play();
+        }
     }
 }
