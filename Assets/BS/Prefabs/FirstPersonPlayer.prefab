@@ -804,8 +804,8 @@ MonoBehaviour:
   bolt: {fileID: 6310314637567362704, guid: a07af03fe9890d749b44075118918794, type: 3}
   laserBarrel: {fileID: 5130345260496053106}
   crossBowBarrel: {fileID: 5130345261811690702}
-  ArrowFireAudio: {fileID: 0}
-  LaserGunAudio: {fileID: 0}
+  ArrowFireAudio: {fileID: 6061422115634953445}
+  LaserGunAudio: {fileID: 2908480088880458874}
   kickMinMax: {x: 0.05, y: 0.2}
   recoilAngleMinMax: {x: 3, y: 5}
   recoilMoveSettleTime: 0.1
@@ -834,6 +834,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa9152abc6c098e478ad91df3c638fe0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DimSwitchAudio: {fileID: 7156806054351362871}
   isOld: 1
   movementScript: {fileID: 5130345260890991288}
   charCont: {fileID: 5130345260890991290}
