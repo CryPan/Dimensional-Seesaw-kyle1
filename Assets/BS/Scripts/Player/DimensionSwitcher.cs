@@ -7,6 +7,7 @@ using UnityEngine.Rendering.PostProcessing;
 
 public class DimensionSwitcher : MonoBehaviour
 {
+    public AudioSource DimSwitchAudio;
     public bool isOld = true;
     public PlayerMovement movementScript = null;
     public CharacterController charCont = null;
@@ -36,7 +37,7 @@ public class DimensionSwitcher : MonoBehaviour
         if (playerSwitching > 0.1 && !Settings.isPaused && canSwitch)
         {
             PlayHandMove();
-
+            DimSwitchAudio.Play();
         }
         else if (!canSwitch)
         {
@@ -80,6 +81,7 @@ public class DimensionSwitcher : MonoBehaviour
         HandMove.Play();
         StartCoroutine(FlashFX());
         SwitchDim();
+        
         canSwitch = false;
     }
 

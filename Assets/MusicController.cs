@@ -22,10 +22,10 @@ public class MusicController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Music();
+        SwtichAudio();
     }
 
-    void Music()
+    private void SwtichAudio()
     {
         if (dimSwitcher.isOld != isOldWorld)
         {
