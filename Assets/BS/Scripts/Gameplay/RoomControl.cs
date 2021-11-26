@@ -7,6 +7,8 @@ public class RoomControl : MonoBehaviour
     public List<GameObject> Enemies = new List<GameObject>();
     public GameObject Exit = null, Entry = null;
     public GameObject HUDManagerObject = null;
+    public GameObject BossMusic;
+    BossMusic _BossMusic;
 
     HUDManager HudManager;
 
@@ -20,6 +22,7 @@ public class RoomControl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        _BossMusic = BossMusic.GetComponent<BossMusic>();
         HudManager = HUDManagerObject.GetComponent<HUDManager>();
     }
 
