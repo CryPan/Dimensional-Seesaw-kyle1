@@ -654,7 +654,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 376, y: -101.40528}
-  m_SizeDelta: {x: 299.5, y: 60.28}
+  m_SizeDelta: {x: 134.08, y: 60.28}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &586965956
 MonoBehaviour:
@@ -1257,13 +1257,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 196004004820544655, guid: e2db6a54576f183468fcb5e70737ca9f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1786481686}
+    - target: {fileID: 196004004820544655, guid: e2db6a54576f183468fcb5e70737ca9f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Quit
+      objectReference: {fileID: 0}
     - target: {fileID: 196004004825159656, guid: e2db6a54576f183468fcb5e70737ca9f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1786481686}
     - target: {fileID: 196004004825159656, guid: e2db6a54576f183468fcb5e70737ca9f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Quit
+      value: QuitConfirmation
       objectReference: {fileID: 0}
     - target: {fileID: 196004006271608198, guid: e2db6a54576f183468fcb5e70737ca9f, type: 3}
       propertyPath: m_Name
