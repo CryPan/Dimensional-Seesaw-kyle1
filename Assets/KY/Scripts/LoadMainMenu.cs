@@ -7,6 +7,8 @@ public class LoadMainMenu : MonoBehaviour
 {
     public void LoadMainMenuAtonce()
     {
+        Settings.isPaused = false;
         SceneManager.LoadScene(0);
+
     }
 }
