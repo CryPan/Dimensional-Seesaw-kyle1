@@ -9,6 +9,8 @@ public class MusicController : MonoBehaviour
 
     public AudioSource MedievalMusic;
     public AudioSource ScifiMusic;
+    public AudioSource Squish;
+    public AudioSource Crash;
 
     bool isOldWorld = true;
 
@@ -23,6 +25,19 @@ public class MusicController : MonoBehaviour
     void Update()
     {
         SwtichAudio();
+    }
+
+    public void PlayDeath(bool squish)
+    {
+        if(squish)
+        {
+            Squish.Play();
+        }
+        else
+        {
+            Crash.Play();
+        }
+        
     }
 
     private void SwtichAudio()

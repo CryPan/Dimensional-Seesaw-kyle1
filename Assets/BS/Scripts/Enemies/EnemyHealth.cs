@@ -5,9 +5,12 @@ using UnityEngine.UI;
 
 public class EnemyHealth : MonoBehaviour
 {
+    public bool squish;
+
     public GameObject FlashObject = null;
     Material mat;
-
+    public GameObject PlayerController;
+    MusicController _musicController;
 
     public float EnemyHP = 1000;
     public RectTransform HealthPanel = null;
@@ -18,6 +21,8 @@ public class EnemyHealth : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        _musicController = PlayerController.gameObject.GetComponent<MusicController>();
+
         FlashObject.SetActive(false);
 
         if (FlashObject.GetComponent<MeshRenderer>() == null)
@@ -40,6 +45,7 @@ public class EnemyHealth : MonoBehaviour
         HealthPanel.anchorMax = new Vector2(CurrentHP / EnemyHP, 1);
         if (CurrentHP <= 0)
         {
+            _musicController.PlayDeath(squish);
             Destroy(gameObject);
         }
     }
