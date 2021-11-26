@@ -9,10 +9,13 @@ public class RoomControl : MonoBehaviour
     public GameObject HUDManagerObject = null;
     public GameObject BossMusic;
     BossMusic _BossMusic;
+    
 
     HUDManager HudManager;
 
     bool EnemiesDead = false;
+    public bool BossRoom = false;
+    public bool isScifi = false;
 
     public string TipString = "";
 
@@ -22,7 +25,11 @@ public class RoomControl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _BossMusic = BossMusic.GetComponent<BossMusic>();
+        if(BossMusic != null)
+        {
+            _BossMusic = BossMusic.GetComponent<BossMusic>();
+        }
+        
         HudManager = HUDManagerObject.GetComponent<HUDManager>();
     }
 
@@ -55,11 +62,24 @@ public class RoomControl : MonoBehaviour
         if(other.tag == "Player")
         {
             HudManager.SetPlayerTip(TipString);
+            
             if(Entry != null)
             {
                 Entry.SetActive(true);
             }
             
+            if(BossRoom)
+            {
+                if(isScifi)
+                {
+                    _BossMusic.ScifiBossMusic();
+                }
+                else
+                {
+                    _BossMusic.MedievalBossMusic();
+                }
+                
+            }
 
             if(isFloatingHeadRoom)
             {

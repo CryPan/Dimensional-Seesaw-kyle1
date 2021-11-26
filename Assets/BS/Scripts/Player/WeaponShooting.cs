@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class WeaponShooting : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class WeaponShooting : MonoBehaviour
     public GameObject energyBall = null;
     public GameObject bolt = null;
     public Transform laserBarrel = null, crossBowBarrel = null;
+    public AudioSource ArrowFireAudio;
+    public AudioSource LaserGunAudio;
 
     [Header("Recoil")]
     public Vector2 kickMinMax = new Vector2(.05f, .2f);
@@ -51,6 +54,7 @@ public class WeaponShooting : MonoBehaviour
     float switchingTimer;
     float playerShooting = 0;
     float playerSwitching = 0;
+    AudioSource chosenAudio;
     
 
 
@@ -85,6 +89,7 @@ public class WeaponShooting : MonoBehaviour
             bullet = energyBall;
             bulletSpeed = laserSpeed;
             ChosenTimer = LaserDelay;
+            chosenAudio = LaserGunAudio;
         }
         else
         {
@@ -95,6 +100,7 @@ public class WeaponShooting : MonoBehaviour
             bullet = bolt;
             bulletSpeed = boltSpeed;
             ChosenTimer = boltDelay;
+            chosenAudio = ArrowFireAudio;
         }
     }
 
@@ -171,6 +177,7 @@ public class WeaponShooting : MonoBehaviour
         ModelArrow.SetActive(false);
         PullBackRope.SetActive(false);
         RopeFired.SetActive(true);
+        chosenAudio.Play();
         GameObject clone = Instantiate(bullet, barrel.transform.position, barrel.transform.rotation);
         if(isLaserWeapon)
         {
