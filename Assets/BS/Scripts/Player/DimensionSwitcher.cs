@@ -7,7 +7,7 @@ using UnityEngine.Rendering.PostProcessing;
 
 public class DimensionSwitcher : MonoBehaviour
 {
-    bool isOld = true;
+    public bool isOld = true;
     public PlayerMovement movementScript = null;
     public CharacterController charCont = null;
 
@@ -36,6 +36,7 @@ public class DimensionSwitcher : MonoBehaviour
         if (playerSwitching > 0.1 && !Settings.isPaused && canSwitch)
         {
             PlayHandMove();
+
         }
         else if (!canSwitch)
         {
