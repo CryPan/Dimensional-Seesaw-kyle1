@@ -2935,19 +2935,7 @@ MonoBehaviour:
   m_Value: 20
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1621299761230057081}
-        m_TargetAssemblyTypeName: OptionsMenu, Assembly-CSharp
-        m_MethodName: ChangeSensitivity
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &1621299759942314252
 GameObject:
   m_ObjectHideFlags: 0
@@ -7765,10 +7753,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2227729232132136155, guid: 550099afc73cdaa4b96edf5f3fedab68, type: 3}
-      propertyPath: m_MaxValue
-      value: 1.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2227729232132136155, guid: 550099afc73cdaa4b96edf5f3fedab68, type: 3}
       propertyPath: m_MinValue
       value: 0
       objectReference: {fileID: 0}
@@ -7912,6 +7896,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5144114585032152108, guid: 550099afc73cdaa4b96edf5f3fedab68, type: 3}
+      propertyPath: Default
+      value: 0.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 5762967178902020078, guid: 550099afc73cdaa4b96edf5f3fedab68, type: 3}
+      propertyPath: Default
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5867539483701112449, guid: 550099afc73cdaa4b96edf5f3fedab68, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -7936,6 +7928,10 @@ PrefabInstance:
       propertyPath: m_FontData.m_Font
       value: 
       objectReference: {fileID: 12800000, guid: 9929a87ae43a1274c95443d399d66053, type: 3}
+    - target: {fileID: 6224431132559353527, guid: 550099afc73cdaa4b96edf5f3fedab68, type: 3}
+      propertyPath: Default
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6677297050265356524, guid: 550099afc73cdaa4b96edf5f3fedab68, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -7965,20 +7961,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6962209310979242155, guid: 550099afc73cdaa4b96edf5f3fedab68, type: 3}
-      propertyPath: m_MaxValue
-      value: 1.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6962209310979242155, guid: 550099afc73cdaa4b96edf5f3fedab68, type: 3}
       propertyPath: m_MinValue
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6962209310979242155, guid: 550099afc73cdaa4b96edf5f3fedab68, type: 3}
       propertyPath: m_Value
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8516756607274614964, guid: 550099afc73cdaa4b96edf5f3fedab68, type: 3}
-      propertyPath: m_MaxValue
-      value: 1.3
       objectReference: {fileID: 0}
     - target: {fileID: 8516756607274614964, guid: 550099afc73cdaa4b96edf5f3fedab68, type: 3}
       propertyPath: m_MinValue
