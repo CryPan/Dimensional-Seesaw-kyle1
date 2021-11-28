@@ -16,11 +16,14 @@ public class PlayerLook : MonoBehaviour
 
     void Start()
     {
+
         fpsCamera.fieldOfView = Settings.cameraFov;
     }
 
     private void Update()
     {
+        Debug.Log(PlayerPrefs.GetFloat("Sensitivity"));
+
         if(Settings.isPaused)
         {
             mouseX = 0;
@@ -38,7 +41,7 @@ public class PlayerLook : MonoBehaviour
 
     public void ReceiveInput(Vector2 mouseInput)
     {
-        mouseX = mouseInput.x * Settings.sensitivity;
-        mouseY = mouseInput.y * Settings.sensitivity;
+        mouseX = mouseInput.x * PlayerPrefs.GetFloat("Sensitivity") / 100;
+        mouseY = mouseInput.y * PlayerPrefs.GetFloat("Sensitivity") / 100;
     }
 }
