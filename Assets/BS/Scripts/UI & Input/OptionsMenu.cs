@@ -16,8 +16,8 @@ public class OptionsMenu : MonoBehaviour
 
     private void Start()
     {
-        PlayerPrefs.SetFloat("Sensitivity", 10);
-        
+        sensitivitySlider.value = PlayerPrefs.GetFloat("Sensitivity");
+        sensitivityText.text = "" + (int)PlayerPrefs.GetFloat("Sensitivity");
 
         sensitivitySlider.onValueChanged.AddListener(delegate { ChangeSensitivity(sensitivitySlider); });
         FullscreenDropdown.onValueChanged.AddListener(delegate { FullscreenDropdownValueChanged(FullscreenDropdown); });
@@ -78,7 +78,7 @@ public class OptionsMenu : MonoBehaviour
 
     public void ChangeSensitivity(Slider change)
     {
-        sensitivityText.text = "" + PlayerPrefs.GetFloat("Sensitivity");
         PlayerPrefs.SetFloat("Sensitivity", change.value);
+        sensitivityText.text = "" + (int)PlayerPrefs.GetFloat("Sensitivity");
     }
 }
