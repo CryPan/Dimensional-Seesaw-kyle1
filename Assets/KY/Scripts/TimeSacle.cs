@@ -1,20 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Playables;
 
-public class HandMove : MonoBehaviour
+public class TimeSacle : MonoBehaviour
 {
-    public PlayableDirector HandMovetojump;
     // Start is called before the first frame update
     void Start()
     {
-        Time.timeScale = 1f;
+        
     }
 
+    // Update is called once per frame
     void Update()
     {
-        Debug.Log(Time.deltaTime);
+        
     }
-
 }
