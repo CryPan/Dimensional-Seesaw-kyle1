@@ -9,6 +9,7 @@ public class QualitySetter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        ChangeQuality(PlayerPrefs.GetInt("QualityLevel", 3));
         _dropdown = GetComponent<Dropdown>();
         _dropdown.options.Clear();
         string[] qualityLevels = QualitySettings.names;
@@ -20,12 +21,14 @@ public class QualitySetter : MonoBehaviour
             _dropdown.options.Add(data);
         }
         _dropdown.value = QualitySettings.GetQualityLevel();
+
     }
 
 
     public void ChangeQuality(int value)
     {
         QualitySettings.SetQualityLevel(value);
+        PlayerPrefs.SetInt("QualityLevel", value);
     }
 
 
