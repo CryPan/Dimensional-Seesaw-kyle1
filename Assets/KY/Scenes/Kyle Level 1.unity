@@ -302,6 +302,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7146315436408728884, guid: 45f85937532c16c43978faacdaf44391, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7844767783435411658, guid: 45f85937532c16c43978faacdaf44391, type: 3}
       propertyPath: m_Name
       value: Kyle Level 1
